@@ -1,2 +1,1 @@
-![banner](../URL%20URI.jpg)
-![banner](../URL_URI.jpg)
+![banner](../URL%20-%20URI.jpg)
