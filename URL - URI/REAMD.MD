@@ -1,1 +1,2 @@
-![banner](../imagenes/URL URI.jpg)
+
+![banner](imagenes/glosario.png)
