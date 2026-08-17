@@ -1,2 +1,2 @@
 # Glosario-De-Ciberseguridad-
-Glosario 
+![banner](../images/glosario.png)
