@@ -1,2 +1,0 @@
-
-![banner](imagenes/glosario.png)
