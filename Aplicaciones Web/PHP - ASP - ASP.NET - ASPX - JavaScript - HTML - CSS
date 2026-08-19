@@ -1,1 +1,120 @@
+!banner 
 
+PHP
+
+Explicación breve y resumida de lo más importante
+Lenguaje de programación utilizado principalmente para crear aplicaciones y páginas web del lado del servidor. El servidor procesa el código PHP y genera contenido que posteriormente recibe el navegador.
+
+¿Dónde lo encuentro?
+En servidores web y aplicaciones que utilizan archivos .php. Es común encontrarlo junto con servidores como Apache o Nginx y bases de datos.
+
+¿Por qué me afecta?
+Una aplicación PHP mal desarrollada o configurada puede presentar vulnerabilidades como inyección SQL, ejecución de código, inclusión de archivos o manejo inseguro de sesiones.
+
+Si lo tiene, ¿cómo se soluciona?
+Mantener PHP y sus dependencias actualizados, validar entradas, utilizar consultas parametrizadas, controlar permisos y aplicar configuraciones seguras del servidor.
+
+¿Cómo lo usaría un atacante en mi contra?
+Puede intentar explotar una vulnerabilidad de la aplicación PHP para enviar código o datos manipulados, acceder a información, ejecutar acciones no autorizadas o comprometer el servidor.
+
+ASP
+
+Explicación breve y resumida de lo más importante
+ASP (Active Server Pages) es una tecnología de Microsoft utilizada para generar contenido web dinámico desde el servidor. Es una tecnología antigua que precedió a ASP.NET.
+
+¿Dónde lo encuentro?
+Principalmente en aplicaciones web antiguas de Microsoft, normalmente asociadas con archivos .asp y servidores IIS.
+
+¿Por qué me afecta?
+Las aplicaciones ASP antiguas pueden utilizar componentes desactualizados o configuraciones inseguras, aumentando su superficie de ataque.
+
+Si lo tiene, ¿cómo se soluciona?
+Actualizar o migrar aplicaciones antiguas cuando sea posible, mantener IIS y sus componentes actualizados y corregir vulnerabilidades y configuraciones inseguras.
+
+¿Cómo lo usaría un atacante en mi contra?
+Puede buscar vulnerabilidades en aplicaciones ASP expuestas para manipular solicitudes, acceder a información o conseguir acceso no autorizado al servidor.
+
+ASP.NET
+
+Explicación breve y resumida de lo más importante
+Framework de Microsoft para desarrollar aplicaciones web. Permite crear aplicaciones que procesan solicitudes en el servidor y generan contenido dinámico.
+
+¿Dónde lo encuentro?
+En aplicaciones web alojadas principalmente en servidores IIS y en proyectos desarrollados con tecnologías del ecosistema .NET.
+
+¿Por qué me afecta?
+Una aplicación ASP.NET vulnerable puede permitir ataques contra autenticación, sesiones, entradas de usuario, bases de datos o componentes del servidor.
+
+Si lo tiene, ¿cómo se soluciona?
+Mantener actualizado .NET y sus dependencias, aplicar controles de autenticación y autorización, validar entradas y corregir vulnerabilidades conocidas de la aplicación.
+
+¿Cómo lo usaría un atacante en mi contra?
+Puede aprovechar errores de la aplicación para manipular solicitudes, robar sesiones, acceder a funciones restringidas o ejecutar acciones sin autorización.
+
+ASPX
+
+Explicación breve y resumida de lo más importante
+.aspx es una extensión utilizada habitualmente por páginas de aplicaciones web desarrolladas con ASP.NET. No es un lenguaje de programación independiente.
+
+¿Dónde lo encuentro?
+En servidores web, especialmente IIS, dentro de aplicaciones ASP.NET. Por ejemplo: login.aspx o admin.aspx.
+
+¿Por qué me afecta?
+Una página ASPX expuesta puede formar parte de una aplicación vulnerable. Además, archivos o funcionalidades administrativas accesibles desde Internet pueden convertirse en puntos de entrada.
+
+Si lo tiene, ¿cómo se soluciona?
+La seguridad debe aplicarse a la aplicación ASP.NET que utiliza esas páginas: autenticación, autorización, validación de entradas, actualizaciones y configuración segura del servidor.
+
+¿Cómo lo usaría un atacante en mi contra?
+Puede identificar páginas ASPX accesibles y probarlas para encontrar funciones vulnerables, controles de acceso deficientes o entradas que permitan explotar la aplicación.
+
+JavaScript
+
+Explicación breve y resumida de lo más importante
+Lenguaje de programación utilizado principalmente para añadir comportamiento e interacción a las páginas web. Puede ejecutarse en el navegador y también en servidores mediante plataformas como Node.js.
+
+¿Dónde lo encuentro?
+En páginas web, archivos .js, aplicaciones web y código ejecutado dentro del navegador.
+
+¿Por qué me afecta?
+El código JavaScript puede estar relacionado con vulnerabilidades como Cross-Site Scripting (XSS), manipulación del DOM y exposición accidental de información sensible.
+
+Si lo tiene, ¿cómo se soluciona?
+Validar y escapar correctamente datos, aplicar políticas de seguridad como Content Security Policy cuando corresponda, evitar introducir contenido no confiable directamente en el DOM y mantener las dependencias actualizadas.
+
+¿Cómo lo usaría un atacante en mi contra?
+Puede intentar introducir JavaScript malicioso en una aplicación vulnerable para ejecutar código en el navegador de otra persona, robar información accesible desde la sesión o realizar acciones en su nombre.
+
+HTML
+
+Explicación breve y resumida de lo más importante
+Lenguaje de marcado utilizado para estructurar el contenido de una página web. Define elementos como formularios, enlaces, imágenes, títulos y campos de entrada.
+
+¿Dónde lo encuentro?
+En prácticamente cualquier página web, normalmente como código HTML enviado por el servidor y procesado por el navegador.
+
+¿Por qué me afecta?
+HTML forma parte de la superficie de ataque de una aplicación web. Una aplicación que incorpora contenido controlado por usuarios de forma insegura puede facilitar ataques como XSS.
+
+Si lo tiene, ¿cómo se soluciona?
+El HTML debe generarse y procesarse de forma segura, evitando insertar contenido no confiable sin el escape o sanitización adecuados y aplicando controles adicionales cuando sean necesarios.
+
+¿Cómo lo usaría un atacante en mi contra?
+Puede intentar introducir elementos o contenido malicioso en páginas que aceptan entradas del usuario, especialmente cuando la aplicación no filtra o procesa correctamente esos datos.
+
+CSS
+
+Explicación breve y resumida de lo más importante
+Lenguaje utilizado para definir la apariencia y presentación visual de las páginas web, como colores, tamaños, posiciones y diseños.
+
+¿Dónde lo encuentro?
+En archivos .css, dentro de páginas HTML o en aplicaciones web que utilizan hojas de estilos externas o internas.
+
+¿Por qué me afecta?
+CSS normalmente no proporciona acceso directo al sistema, pero una configuración o implementación insegura puede contribuir a problemas de seguridad y, en determinados escenarios, facilitar técnicas de engaño visual o explotación combinada con otras vulnerabilidades.
+
+Si lo tiene, ¿cómo se soluciona?
+Mantener separadas las funciones de presentación y lógica, evitar depender de contenido no confiable para generar estilos y aplicar controles de seguridad adecuados en la aplicación web.
+
+¿Cómo lo usaría un atacante en mi contra?
+Puede intentar manipular la apariencia de una página para engañar a usuarios o combinar técnicas relacionadas con estilos con otras vulnerabilidades de la aplicación.
