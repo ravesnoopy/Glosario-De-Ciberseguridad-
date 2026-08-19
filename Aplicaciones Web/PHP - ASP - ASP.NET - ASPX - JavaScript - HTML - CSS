@@ -1,120 +1,134 @@
 !banner 
 
-PHP
+# PHP / ASP / ASP.NET / ASPX / JavaScript / HTML / CSS
 
-Explicación breve y resumida de lo más importante
-Lenguaje de programación utilizado principalmente para crear aplicaciones y páginas web del lado del servidor. El servidor procesa el código PHP y genera contenido que posteriormente recibe el navegador.
+### PHP
 
-¿Dónde lo encuentro?
-En servidores web y aplicaciones que utilizan archivos .php. Es común encontrarlo junto con servidores como Apache o Nginx y bases de datos.
+**¿Qué es?**  
+Lenguaje de programación utilizado principalmente para desarrollar aplicaciones web del lado del servidor.
 
-¿Por qué me afecta?
-Una aplicación PHP mal desarrollada o configurada puede presentar vulnerabilidades como inyección SQL, ejecución de código, inclusión de archivos o manejo inseguro de sesiones.
+**¿Dónde lo encuentro?**  
+En servidores y aplicaciones web, normalmente en archivos `.php`.
 
-Si lo tiene, ¿cómo se soluciona?
-Mantener PHP y sus dependencias actualizados, validar entradas, utilizar consultas parametrizadas, controlar permisos y aplicar configuraciones seguras del servidor.
+**¿Por qué me afecta?**  
+Una aplicación PHP vulnerable puede permitir ataques como inyección SQL, ejecución de código o acceso no autorizado.
 
-¿Cómo lo usaría un atacante en mi contra?
-Puede intentar explotar una vulnerabilidad de la aplicación PHP para enviar código o datos manipulados, acceder a información, ejecutar acciones no autorizadas o comprometer el servidor.
+**¿Cómo se soluciona?**  
+Mantener PHP y sus dependencias actualizados, validar entradas, utilizar consultas parametrizadas y aplicar una configuración segura.
 
-ASP
+**¿Cómo lo usaría un atacante en mi contra?**  
+Puede aprovechar vulnerabilidades de una aplicación PHP para manipular solicitudes, acceder a información o ejecutar acciones no autorizadas.
 
-Explicación breve y resumida de lo más importante
-ASP (Active Server Pages) es una tecnología de Microsoft utilizada para generar contenido web dinámico desde el servidor. Es una tecnología antigua que precedió a ASP.NET.
+---
 
-¿Dónde lo encuentro?
-Principalmente en aplicaciones web antiguas de Microsoft, normalmente asociadas con archivos .asp y servidores IIS.
+### ASP
 
-¿Por qué me afecta?
-Las aplicaciones ASP antiguas pueden utilizar componentes desactualizados o configuraciones inseguras, aumentando su superficie de ataque.
+**¿Qué es?**  
+Tecnología de Microsoft utilizada para generar páginas web dinámicas desde el servidor. Es anterior a ASP.NET y actualmente se considera una tecnología heredada.
 
-Si lo tiene, ¿cómo se soluciona?
-Actualizar o migrar aplicaciones antiguas cuando sea posible, mantener IIS y sus componentes actualizados y corregir vulnerabilidades y configuraciones inseguras.
+**¿Dónde lo encuentro?**  
+Principalmente en aplicaciones web antiguas alojadas en IIS, normalmente mediante archivos `.asp`.
 
-¿Cómo lo usaría un atacante en mi contra?
-Puede buscar vulnerabilidades en aplicaciones ASP expuestas para manipular solicitudes, acceder a información o conseguir acceso no autorizado al servidor.
+**¿Por qué me afecta?**  
+Las aplicaciones ASP heredadas pueden utilizar componentes obsoletos o configuraciones inseguras que aumentan la superficie de ataque.
 
-ASP.NET
+**¿Cómo se soluciona?**  
+Mantener el servidor actualizado, reducir la exposición y, cuando sea posible, migrar aplicaciones heredadas a tecnologías modernas y soportadas.
 
-Explicación breve y resumida de lo más importante
-Framework de Microsoft para desarrollar aplicaciones web. Permite crear aplicaciones que procesan solicitudes en el servidor y generan contenido dinámico.
+**¿Cómo lo usaría un atacante en mi contra?**  
+Puede buscar vulnerabilidades en aplicaciones ASP expuestas para obtener información o conseguir acceso no autorizado.
 
-¿Dónde lo encuentro?
-En aplicaciones web alojadas principalmente en servidores IIS y en proyectos desarrollados con tecnologías del ecosistema .NET.
+---
 
-¿Por qué me afecta?
-Una aplicación ASP.NET vulnerable puede permitir ataques contra autenticación, sesiones, entradas de usuario, bases de datos o componentes del servidor.
+### ASP.NET
 
-Si lo tiene, ¿cómo se soluciona?
-Mantener actualizado .NET y sus dependencias, aplicar controles de autenticación y autorización, validar entradas y corregir vulnerabilidades conocidas de la aplicación.
+**¿Qué es?**  
+Framework de Microsoft para desarrollar aplicaciones web que procesan solicitudes y generan contenido desde el servidor.
 
-¿Cómo lo usaría un atacante en mi contra?
-Puede aprovechar errores de la aplicación para manipular solicitudes, robar sesiones, acceder a funciones restringidas o ejecutar acciones sin autorización.
+**¿Dónde lo encuentro?**  
+En aplicaciones web alojadas en servidores como IIS y desarrolladas dentro del ecosistema .NET.
 
-ASPX
+**¿Por qué me afecta?**  
+Una aplicación ASP.NET mal desarrollada o configurada puede presentar vulnerabilidades relacionadas con autenticación, autorización, sesiones o entradas de usuario.
 
-Explicación breve y resumida de lo más importante
-.aspx es una extensión utilizada habitualmente por páginas de aplicaciones web desarrolladas con ASP.NET. No es un lenguaje de programación independiente.
+**¿Cómo se soluciona?**  
+Mantener .NET y sus dependencias actualizados, implementar controles adecuados de autenticación y autorización y validar correctamente las entradas.
 
-¿Dónde lo encuentro?
-En servidores web, especialmente IIS, dentro de aplicaciones ASP.NET. Por ejemplo: login.aspx o admin.aspx.
+**¿Cómo lo usaría un atacante en mi contra?**  
+Puede explotar vulnerabilidades de la aplicación para acceder a funciones restringidas, manipular datos o comprometer otros componentes.
 
-¿Por qué me afecta?
-Una página ASPX expuesta puede formar parte de una aplicación vulnerable. Además, archivos o funcionalidades administrativas accesibles desde Internet pueden convertirse en puntos de entrada.
+---
 
-Si lo tiene, ¿cómo se soluciona?
-La seguridad debe aplicarse a la aplicación ASP.NET que utiliza esas páginas: autenticación, autorización, validación de entradas, actualizaciones y configuración segura del servidor.
+### ASPX
 
-¿Cómo lo usaría un atacante en mi contra?
-Puede identificar páginas ASPX accesibles y probarlas para encontrar funciones vulnerables, controles de acceso deficientes o entradas que permitan explotar la aplicación.
+**¿Qué es?**  
+Extensión utilizada habitualmente por páginas web desarrolladas con ASP.NET. No es un lenguaje de programación independiente.
 
-JavaScript
+**¿Dónde lo encuentro?**  
+En aplicaciones ASP.NET alojadas en servidores web, especialmente IIS. Por ejemplo, `login.aspx` o `admin.aspx`.
 
-Explicación breve y resumida de lo más importante
-Lenguaje de programación utilizado principalmente para añadir comportamiento e interacción a las páginas web. Puede ejecutarse en el navegador y también en servidores mediante plataformas como Node.js.
+**¿Por qué me afecta?**  
+Una página ASPX puede formar parte de una aplicación vulnerable o exponer funciones que no deberían estar disponibles para usuarios no autorizados.
 
-¿Dónde lo encuentro?
-En páginas web, archivos .js, aplicaciones web y código ejecutado dentro del navegador.
+**¿Cómo se soluciona?**  
+Aplicar correctamente autenticación y autorización, mantener la aplicación actualizada y evitar exponer funciones administrativas innecesariamente.
 
-¿Por qué me afecta?
-El código JavaScript puede estar relacionado con vulnerabilidades como Cross-Site Scripting (XSS), manipulación del DOM y exposición accidental de información sensible.
+**¿Cómo lo usaría un atacante en mi contra?**  
+Puede identificar páginas ASPX accesibles y analizarlas en busca de controles de acceso deficientes o vulnerabilidades.
 
-Si lo tiene, ¿cómo se soluciona?
-Validar y escapar correctamente datos, aplicar políticas de seguridad como Content Security Policy cuando corresponda, evitar introducir contenido no confiable directamente en el DOM y mantener las dependencias actualizadas.
+---
 
-¿Cómo lo usaría un atacante en mi contra?
-Puede intentar introducir JavaScript malicioso en una aplicación vulnerable para ejecutar código en el navegador de otra persona, robar información accesible desde la sesión o realizar acciones en su nombre.
+### JavaScript
 
-HTML
+**¿Qué es?**  
+Lenguaje de programación utilizado para añadir comportamiento e interacción a páginas y aplicaciones web.
 
-Explicación breve y resumida de lo más importante
-Lenguaje de marcado utilizado para estructurar el contenido de una página web. Define elementos como formularios, enlaces, imágenes, títulos y campos de entrada.
+**¿Dónde lo encuentro?**  
+En páginas web, archivos `.js` y aplicaciones que ejecutan código JavaScript.
 
-¿Dónde lo encuentro?
-En prácticamente cualquier página web, normalmente como código HTML enviado por el servidor y procesado por el navegador.
+**¿Por qué me afecta?**  
+Una implementación insegura puede contribuir a vulnerabilidades como XSS, manipulación del DOM o exposición de información.
 
-¿Por qué me afecta?
-HTML forma parte de la superficie de ataque de una aplicación web. Una aplicación que incorpora contenido controlado por usuarios de forma insegura puede facilitar ataques como XSS.
+**¿Cómo se soluciona?**  
+Validar y escapar correctamente los datos, evitar insertar contenido no confiable en el DOM, mantener las dependencias actualizadas y utilizar controles como CSP cuando corresponda.
 
-Si lo tiene, ¿cómo se soluciona?
-El HTML debe generarse y procesarse de forma segura, evitando insertar contenido no confiable sin el escape o sanitización adecuados y aplicando controles adicionales cuando sean necesarios.
+**¿Cómo lo usaría un atacante en mi contra?**  
+Puede introducir JavaScript malicioso para ejecutarlo en el navegador de otra persona, robar información accesible desde su sesión o realizar acciones en su nombre.
 
-¿Cómo lo usaría un atacante en mi contra?
-Puede intentar introducir elementos o contenido malicioso en páginas que aceptan entradas del usuario, especialmente cuando la aplicación no filtra o procesa correctamente esos datos.
+---
 
-CSS
+### HTML
 
-Explicación breve y resumida de lo más importante
-Lenguaje utilizado para definir la apariencia y presentación visual de las páginas web, como colores, tamaños, posiciones y diseños.
+**¿Qué es?**  
+Lenguaje de marcado utilizado para estructurar el contenido de las páginas web.
 
-¿Dónde lo encuentro?
-En archivos .css, dentro de páginas HTML o en aplicaciones web que utilizan hojas de estilos externas o internas.
+**¿Dónde lo encuentro?**  
+En prácticamente cualquier página o aplicación web, donde es procesado por el navegador.
 
-¿Por qué me afecta?
-CSS normalmente no proporciona acceso directo al sistema, pero una configuración o implementación insegura puede contribuir a problemas de seguridad y, en determinados escenarios, facilitar técnicas de engaño visual o explotación combinada con otras vulnerabilidades.
+**¿Por qué me afecta?**  
+El contenido HTML puede formar parte de la superficie de ataque, especialmente cuando incorpora datos proporcionados por usuarios sin procesarlos correctamente.
 
-Si lo tiene, ¿cómo se soluciona?
-Mantener separadas las funciones de presentación y lógica, evitar depender de contenido no confiable para generar estilos y aplicar controles de seguridad adecuados en la aplicación web.
+**¿Cómo se soluciona?**  
+Escapar o sanitizar correctamente el contenido no confiable y aplicar controles de seguridad cuando la aplicación genere HTML dinámicamente.
 
-¿Cómo lo usaría un atacante en mi contra?
-Puede intentar manipular la apariencia de una página para engañar a usuarios o combinar técnicas relacionadas con estilos con otras vulnerabilidades de la aplicación.
+**¿Cómo lo usaría un atacante en mi contra?**  
+Puede intentar insertar contenido manipulado en páginas vulnerables para alterar su comportamiento o facilitar ataques como XSS.
+
+---
+
+### CSS
+
+**¿Qué es?**  
+Lenguaje utilizado para definir la apariencia y presentación visual de las páginas web.
+
+**¿Dónde lo encuentro?**  
+En archivos `.css`, documentos HTML y aplicaciones web.
+
+**¿Por qué me afecta?**  
+CSS normalmente no permite comprometer un sistema por sí solo, pero puede contribuir a engaños visuales o combinarse con otras vulnerabilidades.
+
+**¿Cómo se soluciona?**  
+Evitar depender de contenido no confiable para generar estilos y aplicar controles de seguridad adecuados en la aplicación.
+
+**¿Cómo lo usaría un atacante en mi contra?**  
+Puede manipular la apariencia de una página para engañar a usuarios o combinar técnicas de presentación con otras vulnerabilidades web.
