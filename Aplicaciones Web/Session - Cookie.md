@@ -1,5 +1,4 @@
 
-```markdown
 ## Session
 
 **¿Qué es?**  
